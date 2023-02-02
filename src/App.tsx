@@ -1,25 +1,16 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Web3Button } from '@web3modal/react'
+import WalletConnnect from './WalletConnect';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {/* Predefined button  */}
+      <Web3Button icon="hide" label="지갑연결" balance="hide" />
+      <br />
+      <WalletConnnect/>
+      <br />
+      
+    </>
   );
 }
 
