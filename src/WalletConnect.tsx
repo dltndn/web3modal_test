@@ -3,7 +3,6 @@ import { Web3Modal, useWeb3ModalTheme } from '@web3modal/react'
 import { useEffect, useState } from 'react'
 import { configureChains, createClient, WagmiConfig, useAccount, useConnect } from "wagmi";
 import { goerli, polygonMumbai } from 'wagmi/chains'
-import { WalletConnectConnector } from "wagmi/connectors/walletConnect";
 
 if (!process.env.REACT_APP_PROJECT_ID) {
   throw new Error('You need to provide REACT_APP_PROJECT_ID env variable')
